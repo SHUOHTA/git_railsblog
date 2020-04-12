@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Railsblog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="custom-backgraound">
+    <header class="headerground" role="banner">
+      <div class="inner-header">
+        <div class="logo">
+          logo
+        </div>
+        <% if user_signed_in? %>
+          <div class="inner-menu">
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'inner-text-deco-none' %>
+          </div>
+        <% else %>
+          <div class="inner-menu">
+            <%= link_to "ログイン", new_user_session_path, class: 'inner-text-deco-none' %>
+            |
+            <%= link_to "新規登録", new_user_registration_path, class: 'inner-text-deco-none' %>
+          </div>
+        <% end %>
+      </div>
+      <div class="outer-header">
+        <div class="outer-menu">
+          <%= link_to "HOME ", blogs_path, class: 'outer-text-deco-none' %>
+          <%= link_to "投稿", new_blog_path, class: 'outer-text-deco-none' %>
+          <%= link_to "api入れよう", {}, class: 'outer-text-deco-none' %>
+        </div>
+        
+      </div>
+    </header>
+    
+
+    <%= yield %>
+  </body>
+</html>

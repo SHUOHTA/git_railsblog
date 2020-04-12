@@ -1,0 +1,139 @@
+/*header*/
+body.custom-backgraound {
+  background-color: #cbc5bb;
+}
+
+header.headerground {
+  background-color: #ffffff; 
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  top: 0px;
+  font-family: "Meiryo UI";
+}
+
+div.logo {
+  background-color: #ffffff; 
+  box-sizing: border-box;
+  padding-left: 30px;
+  /*display: inline-block;*/
+  font-size: 200%;
+}
+
+div.inner-menu {
+  background-color: #ffffff; 
+  box-sizing: border-box;
+  text-align: right;
+  padding-right: 30px;
+  word-spacing: 5px;
+  /*display: inline-block;*/
+  
+}
+
+.inner-text-deco-none {
+  text-decoration: none;
+  color: #000000;
+}
+
+div.inner-header {
+  background-color: #ffffff; 
+  box-sizing: border-box;
+}
+
+div.outer-header {
+  background-color: #545454; 
+  box-sizing: border-box;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 30px;
+  padding-left: 30px;
+}
+
+.outer-text-deco-none {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+div.outer-menu {
+  word-spacing: 30px;
+}
+
+div.main-content {
+  /*background-color: #ffffff;*/ 
+  box-sizing: border-box;
+  width: 800px;
+  height: 1000px;
+  position: relative;
+  left: 50px;
+  font-family: "Meiryo UI";
+}
+
+div.content-post {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width: 800px;
+  height: 100px;
+  border-radius: 20px;
+  position: relative;
+  top: 50px;
+  left: 0px;
+  margin-bottom: 50px;
+  /*overflow: hidden;*/
+  /*cursor: pointer;*/
+}
+
+div.shousai_time-post {
+  text-align: right;
+}
+div.time-post {
+  box-sizing: border-box;
+  position: relative;
+  top: -20px;
+  font-size: 90%;
+  padding-right: 30px;
+  display: inline-block;
+}
+
+div.title-post {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  top: -15px;
+}
+
+div.comment-post {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  position: relative;
+  top: -5px;
+}
+
+div.sub-content {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #8fbc8f;
+  left: 950px;
+  width: 400px;
+  height: 1000px;
+  top: -950px;
+
+}
+
+/*new画面未作成とりあえず*/
+.new-comment {
+  font-family: "Meiryo UI";
+}
+
+div.shousai {
+  box-sizing: border-box;
+  position: relative;
+  top: -20px;
+  display: inline-block;
+  padding-right: 20px;
+}

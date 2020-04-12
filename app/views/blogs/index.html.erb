@@ -1,0 +1,9 @@
+<div class="main-content" >
+  <% @blogs.each do |blog| %>
+    <%= render partial: "blog", locals: { blog: blog } %>
+  <% end %>
+</div>
+
+<div class="sub-content" >
+  何にしようか決まっていないエリア、とりあえず確保
+</div>

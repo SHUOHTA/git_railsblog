@@ -1,0 +1,8 @@
+<%= simple_format(@blog.title) %>
+<%= simple_format(@blog.text) %>
+
+<% blog = @blog %>
+<div>
+    <%= link_to "戻る ", "/blogs", method: :get %>
+    <%= link_to "削除", "/blogs/#{blog.id}", method: :delete %>
+</div>
