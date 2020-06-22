@@ -1,10 +1,14 @@
 <div class="new-comment">
-  <%= form_tag('/blogs', method: :post) do %>
-    <h3>
-      投稿フォーム
-    </h3>
-    <textarea name="title" placeholder="title" rows="2" cols="100"></textarea>
-    <textarea name="text" placeholder="text" rows="10" cols="100"></textarea>
-    <input type="submit" value="投稿">
-  <% end %>
+  <div class="new-content">
+    <%= form_tag('/blogs', method: :post) do %>
+      <h3>
+        投稿フォーム
+      </h3>
+      <div class="new-form_tag">
+        <textarea name="title" placeholder="title" rows="2" cols="90"></textarea>
+        <textarea name="text" placeholder="text" rows="10" cols="90"></textarea>
+        <input type="submit" value="投稿">
+      </div>
+    <% end %>
+  </div>
 </div>

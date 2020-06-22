@@ -1,6 +1,7 @@
 /*header*/
 body.custom-backgraound {
-  background-color: #cbc5bb;
+  /*background-color: #cbc5bb;*/
+  background-color: #f0f0f0;
 }
 
 header.headerground {
@@ -17,8 +18,12 @@ div.logo {
   background-color: #ffffff; 
   box-sizing: border-box;
   padding-left: 30px;
-  /*display: inline-block;*/
   font-size: 200%;
+
+  .logo-text-deco-none{
+    text-decoration: none;
+    color: #000000;
+  }
 }
 
 div.inner-menu {
@@ -61,33 +66,56 @@ div.outer-menu {
   word-spacing: 30px;
 }
 
-div.main-content {
-  /*background-color: #ffffff;*/ 
+div.content {
+  background-color: #f0f0f0;
   box-sizing: border-box;
-  width: 800px;
-  height: 1000px;
-  position: relative;
-  left: 50px;
+  width: 1200px;
+  display: block;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div.main-content {
+  box-sizing: border-box;
+  width: 75%;
+  height: 1600px;
   font-family: "Meiryo UI";
+  display: inline-block;
 }
 
 div.content-post {
   background-color: #ffffff;
   box-sizing: border-box;
-  width: 800px;
+  width: 90%;
   height: 100px;
   border-radius: 20px;
   position: relative;
   top: 50px;
   left: 0px;
+  margin-left: 30px;
   margin-bottom: 50px;
-  /*overflow: hidden;*/
-  /*cursor: pointer;*/
+  border: solid 1px #d3d3d3;
+  cursor: pointer;
+}
+
+input.blog-id {
+  display: none;
 }
 
 div.shousai_time-post {
   text-align: right;
 }
+
+div.shousai {
+  box-sizing: border-box;
+  position: relative;
+  top: -20px;
+  display: inline-block;
+  padding-right: 20px;
+  display: none;
+}
+
 div.time-post {
   box-sizing: border-box;
   position: relative;
@@ -95,6 +123,13 @@ div.time-post {
   font-size: 90%;
   padding-right: 30px;
   display: inline-block;
+}
+
+div.title-post_comment-post {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 680px;
+  text-overflow: ellipsis;
 }
 
 div.title-post {
@@ -116,24 +151,261 @@ div.comment-post {
 
 div.sub-content {
   box-sizing: border-box;
-  position: relative;
-  background-color: #8fbc8f;
-  left: 950px;
-  width: 400px;
-  height: 1000px;
-  top: -950px;
+  background-color: #ffffff;
+  width: 25%;
+  height: 1450px;
+  font-family: "Meiryo UI";
+  display: inline-block;
+  margin-top: 50px;
+  margin-right: 30px;
+  border: solid 1px #d3d3d3;
+}
 
+.profile-comment {
+  border-bottom: solid 1px #d3d3d3;
+}
+
+.profile-comment > .mgc {
+  margin-left: 95px;
+}
+
+.profile-comment > .mgr {
+  margin-left: 10px;
+}
+
+.paginate {
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 40px;
 }
 
 /*new画面未作成とりあえず*/
 .new-comment {
   font-family: "Meiryo UI";
+  background-color: #f0f0f0;
 }
 
-div.shousai {
+.new-content {
+  background-color: #f0f0f0;
   box-sizing: border-box;
-  position: relative;
-  top: -20px;
-  display: inline-block;
-  padding-right: 20px;
+  height: 100vh;
+  width: 1200px;
+  display: block;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+    
+  h3 {
+    text-align: center;
+    font-size: 130%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.new-form_tag {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  
+  textarea {
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    border: solid 1px #d3d3d3;
+  }
+  input {
+    margin-top: 40px;
+    height: 50px;
+    width: 830px;
+    border-radius: 10px;
+    border: none;
+    background-color: #303030;
+    color: #ffffff;
+    font-size: 130%;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+/*edit画面未作成とりあえず*/
+.edit-comment {
+  font-family: "Meiryo UI";
+  background-color: #f0f0f0;
+}
+
+.edit-content {
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 1200px;
+  display: block;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+    
+  h3 {
+    text-align: center;
+    font-size: 130%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.edit-form_tag {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  
+  textarea {
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    border: solid 1px #d3d3d3;
+  }
+  input {
+    margin-top: 40px;
+    height: 50px;
+    width: 830px;
+    border-radius: 10px;
+    border: none;
+    background-color: #303030;
+    color: #ffffff;
+    font-size: 130%;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.shousai-comment {
+  font-family: "Meiryo UI";
+  background-color: #f0f0f0;
+}
+
+.shousai-content {
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 1200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  
+  .shousai {
+    box-sizing: border-box;
+    padding-top: 20px;
+    width: 1000px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    
+    h3 {
+      text-align: center;
+      font-size: 130%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      }
+    }
+}
+
+.shousai-title {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 830px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+  border: solid 1px #d3d3d3;
+  p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+}
+
+.shousai-text {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  height: 184px;
+  width: 830px;
+  display: block;
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid 1px #d3d3d3;
+  p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+}
+
+.shousai-button {
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .shousai-return {
+    text-decoration: none;
+    margin: 0px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: solid 1px #d3d3d3;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 50px;
+    margin: 0px 5px;
+
+  }
+  .shousai-delete {
+    text-decoration: none;
+    margin: 0px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: solid 1px #d3d3d3;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 50px;
+    margin: 0px 5px;
+  }
+  .shousai-edit {
+    text-decoration: none;
+    margin: 0px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: solid 1px #d3d3d3;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 50px;
+    margin: 0px 5px;
+  }
+}
+
+footer.footer {
+  background-color: #545454; 
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Meiryo UI";
+  height: 80px;
+  text-align: center;
+  padding: 10px;
+}
+
+div.log_in {
+  height: 1000px;
+  h2 {
+    color: red;
+  }
 }

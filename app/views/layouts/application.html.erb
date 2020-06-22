@@ -4,7 +4,6 @@
     <title>Railsblog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,7 +12,7 @@
     <header class="headerground" role="banner">
       <div class="inner-header">
         <div class="logo">
-          logo
+          <%= link_to "6月は週休3日 ", blogs_path, method: :get, class: 'logo-text-deco-none' %>
         </div>
         <% if user_signed_in? %>
           <div class="inner-menu">
@@ -29,15 +28,15 @@
       </div>
       <div class="outer-header">
         <div class="outer-menu">
-          <%= link_to "HOME ", blogs_path, class: 'outer-text-deco-none' %>
+          <%= link_to "HOME ", blogs_path, method: :get, class: 'outer-text-deco-none' %>
           <%= link_to "投稿", new_blog_path, class: 'outer-text-deco-none' %>
-          <%= link_to "api入れよう", {}, class: 'outer-text-deco-none' %>
+          <%= link_to "**", {}, class: 'outer-text-deco-none' %>
         </div>
-        
       </div>
     </header>
-    
-
     <%= yield %>
+    <footer class="footer">
+      <p>Copyright © 6月は週休3日 All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

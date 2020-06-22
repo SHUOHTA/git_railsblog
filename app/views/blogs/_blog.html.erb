@@ -1,16 +1,23 @@
 <div class="content-post">
+  
+  <input name= "blog-id", type= "hidden", value= "<%= blog.id %>", class= "blog-id">
+  
   <div class="shousai_time-post">
     <div class="shousai">
-        <%= link_to '詳細', "/blogs/#{blog.id}", method: :get %>
+      <%= link_to '詳細', "/blogs/#{blog.id}", method: :get %>
     </div>
     <div class="time-post">
-      投稿日時:<%= blog.updated_at %>
+      投稿日時: <%= blog.updated_at.year %>年<%= blog.updated_at.month %>月<%= blog.updated_at.day %>日<%= blog.updated_at.hour + 9 %>時<%= blog.updated_at.min %>分
     </div>
   </div>
-  <div class="title-post">
-    <%= simple_format(blog.title) %>
-  </div>
-  <div class="comment-post">
-    <%= simple_format(blog.text) %>
+  <div class="title-post_comment-post">
+    <div class="title-post">
+      <%= simple_format(blog.title) %>
+    </div>
+    <div class="comment-post">
+      <%= simple_format(blog.text) %>
+    </div>
   </div>
 </div>
+
+

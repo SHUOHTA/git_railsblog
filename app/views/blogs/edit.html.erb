@@ -1,0 +1,14 @@
+<div class="edit-comment">
+  <div class="edit-content">
+    <%= form_tag("/blogs/#{@blog.id}", method: :patch ) do %>
+      <h3>
+        編集フォーム
+      </h3>
+      <div class="edit-form_tag">
+        <textarea name="title" placeholder="title" rows="2" cols="90"><%= @blog.title %></textarea>
+        <textarea name="text" placeholder="text" rows="10" cols="90"><%= @blog.text %></textarea>
+        <input type="submit" value="送信">
+      </div>
+    <% end %>
+  </div>
+</div>
