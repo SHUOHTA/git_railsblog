@@ -7,14 +7,19 @@
       <div class="shousai-title">
         <%= simple_format(@blog.title) %>
       </div>
+      <% if @blog.image != nil %>
+        <div class="shousai-image">
+          <img src="<%= @blog.image %>" width="100%" height="100%" alt="<%= @blog.image %>">
+        </div>
+      <% end %>
       <div class="shousai-text">
         <%= simple_format(@blog.text) %>
       </div>
     </div>
     <% blog = @blog %>
     <div class="shousai-button">
-        <%= link_to "戻る ", "/blogs", method: :get, class: 'shousai-return' %>
         <%= link_to "削除", "/blogs/#{blog.id}", method: :delete, class: 'shousai-delete'  %>
+        <%= link_to "戻る ", "/blogs", method: :get, class: 'shousai-return' %>
         <%= link_to "編集", "/blogs/#{blog.id}/edit", method: :get, class: 'shousai-edit'  %>
     </div>
   </div>

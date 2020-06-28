@@ -2,10 +2,11 @@
   <div class="new-content">
     <%= form_tag('/blogs', method: :post) do %>
       <h3>
-        投稿フォーム
+        <!--投稿フォーム-->
       </h3>
       <div class="new-form_tag">
-        <textarea name="title" placeholder="title" rows="2" cols="90"></textarea>
+        <textarea name="title" placeholder="title" rows="1" cols="90"></textarea>
+        <input type="text" name="image" placeholder="Image Url">
         <textarea name="text" placeholder="text" rows="10" cols="90"></textarea>
         <input type="submit" value="投稿">
       </div>

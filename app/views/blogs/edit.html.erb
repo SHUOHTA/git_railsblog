@@ -5,7 +5,8 @@
         編集フォーム
       </h3>
       <div class="edit-form_tag">
-        <textarea name="title" placeholder="title" rows="2" cols="90"><%= @blog.title %></textarea>
+        <textarea name="title" placeholder="title" rows="1" cols="90"><%= @blog.title %></textarea>
+        <input type="text" name="image" placeholder="Image Url" value="<%= @blog.image %>">
         <textarea name="text" placeholder="text" rows="10" cols="90"><%= @blog.text %></textarea>
         <input type="submit" value="送信">
       </div>
